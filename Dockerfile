@@ -2,7 +2,7 @@
 FROM debian:jessie
 MAINTAINER Sean Nelson <audiohacked@gmail.com>
 
-ARG BASE_URL=http://media.steampowered.com/installer/steamcmd_linux.tar.gz
+ENV BASE_URL=http://media.steampowered.com/installer/steamcmd_linux.tar.gz
 ENV PATH /steamcmd:$PATH
 
 WORKDIR /steamcmd
